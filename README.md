@@ -57,5 +57,3 @@ FUCO aims to expand beyond health into a complete ecosystem of AI-powered soluti
 | FUCO Mind | AI Emotional Support & Psychology |
 
 ---
-
-## 🧩 Folder Structure
