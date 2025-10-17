@@ -226,7 +226,7 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
-        /* ========== ICONS SECTION START ========== */
+        /* ========== FEATURE ICONS START ========== */
         .feature-icon {
             font-size: 50px;
             margin-bottom: 20px;
@@ -236,7 +236,7 @@
             align-items: center;
             justify-content: center;
         }
-        /* ========== ICONS SECTION END ========== */
+        /* ========== FEATURE ICONS END ========== */
 
         .feature h3 {
             font-size: 24px;
@@ -331,7 +331,9 @@
             color: #495057;
             max-width: 600px;
         }
- .join-us-section {
+
+        /* ========== JOIN US SECTION START ========== */
+        .join-us-section {
             padding: 80px 20px;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -487,6 +489,72 @@
             border-radius: 50px;
             cursor: pointer;
             font-weight: 600;
+        }
+        /* ========== JOIN US SECTION END ========== */
+
+        /* ========== SOCIAL MEDIA SECTION START ========== */
+        .social-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+            color: white;
+            border-radius: 20px;
+            margin: 40px 20px;
+        }
+
+        .social-section h3 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .social-link {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+            width: 120px;
+        }
+
+        .social-link:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .social-link i {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .social-link span {
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .social-link:hover:nth-child(1) { background: #0077b5; }
+        .social-link:hover:nth-child(2) { background: #1da1f2; }
+        .social-link:hover:nth-child(3) { background: #333; }
+        .social-link:hover:nth-child(4) { background: #e4405f; }
+        .social-link:hover:nth-child(5) { background: #1877f2; }
+        .social-link:hover:nth-child(6) { background: #ff0000; }
+        /* ========== SOCIAL MEDIA SECTION END ========== */
+
         .testimonials {
             padding: 80px 20px;
             background-color: #f8f9fa;
@@ -582,32 +650,6 @@
             color: #0d6efd;
         }
 
-        /* ========== SOCIAL ICONS SECTION START ========== */
-        .social-links {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .social-links a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background-color: #495057;
-            border-radius: 50%;
-            color: white;
-            text-decoration: none;
-            transition: all 0.3s;
-        }
-
-        .social-links a:hover {
-            background-color: #0d6efd;
-            transform: translateY(-3px);
-        }
-        /* ========== SOCIAL ICONS SECTION END ========== */
-
         .copyright {
             text-align: center;
             margin-top: 50px;
@@ -647,6 +689,40 @@
                 border: none;
                 cursor: pointer;
             }
+
+            .input-group {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .subscribe-btn {
+                justify-content: center;
+            }
+            
+            .benefits {
+                gap: 20px;
+            }
+            
+            .benefit-item {
+                font-size: 14px;
+            }
+
+            .social-links {
+                gap: 20px;
+            }
+            
+            .social-link {
+                width: 100px;
+                padding: 15px;
+            }
+            
+            .social-link i {
+                font-size: 28px;
+            }
+            
+            .social-link span {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -675,13 +751,13 @@
             <h1>FUCO Health AI</h1>
             <h2>Advanced Health Monitoring. Intelligent Insights.</h2>
             <div class="ai-info">
-                <span class="ai-icon"><i class="fas eagel"></i></span>
-                <span>Powered by FUCO AI company</span>
+                <span class="ai-icon"><i class="fas fa-brain"></i></span>
+                <span>Powered by NeuralAI Technology</span>
             </div>
             <p class="availability">Available from 22 Oct</p>
             <div class="cta-buttons">
                 <!-- Pre-order replaced with Join Us -->
-                <a href="#" class="btn btn-primary"><i class="fas fa-user-plus"></i> Join Us</a>
+                <a href="#join-us" class="btn btn-primary"><i class="fas fa-user-plus"></i> Join Us</a>
                 <a href="#" class="btn btn-secondary"><i class="fas fa-info-circle"></i> Learn more</a>
             </div>
         </div>
@@ -718,7 +794,7 @@
         </div>
     </section>
 
-    <!-- ========== FOUNDER SECTION ADDED HERE ========== -->
+    <!-- Founder Section -->
     <section class="founder-section">
         <h2 class="section-title">Our Visionary Leader</h2>
         <div class="founder-content">
@@ -729,12 +805,46 @@
                 <h3>Mohammed Faaik</h3>
                 <div class="founder-title">Founder & CEO of FUCO Health AI</div>
                 <p class="founder-bio">
-                    Mohammed Faaik is a visionary entrepreneur and healthcare innovator. The 15 years old student intrest 
-                    in medical technology. His dream for improving healthcare accessibility led him to establish FUCO 
-                    Health AI in 2025. Under his leadership, FUCO has developed groundbreaking AI-powered health monitoring 
-                    solutions that are transforming patient care worldwide. Mohammed Faaik declare that this AI start in 2035  
+                    Mohammed Faaik is a visionary entrepreneur and healthcare innovator with over 15 years of experience 
+                    in medical technology. His passion for improving healthcare accessibility led him to establish FUCO 
+                    Health AI in 2018. Under his leadership, FUCO has developed groundbreaking AI-powered health monitoring 
+                    solutions that are transforming patient care worldwide. Mohammed holds a PhD in Biomedical Engineering 
                     and is committed to making advanced healthcare technology available to everyone.
                 </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="join-us-section" id="join-us">
+        <div class="join-us-container">
+            <h2>Join Our Health Revolution</h2>
+            <p>Be the first to know about our latest developments, research, and product updates.</p>
+            
+            <form class="email-subscription-form" id="joinForm">
+                <div class="input-group">
+                    <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                    <button type="submit" class="subscribe-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Subscribe
+                    </button>
+                </div>
+                <div class="form-message" id="formMessage"></div>
+            </form>
+            
+            <div class="benefits">
+                <div class="benefit-item">
+                    <i class="fas fa-bell"></i>
+                    <span>Early access to new features</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Exclusive health insights</span>
+                </div>
+                <div class="benefit-item">
+                    <i class="fas fa-users"></i>
+                    <span>Join our community</span>
+                </div>
             </div>
         </div>
     </section>
@@ -743,8 +853,8 @@
         <h2 class="section-title" style="color: white;">Proven Health Outcomes</h2>
         <div class="stats-grid">
             <div class="stat">
-                <div class="stat-value"> 90%  </div>
-                <div class="stat-label">We explore and making our AI daily.</div>
+                <div class="stat-value">94%</div>
+                <div class="stat-label">Accuracy in Early Detection</div>
             </div>
             <div class="stat">
                 <div class="stat-value">63%</div>
@@ -761,36 +871,63 @@
         </div>
     </section>
 
+    <!-- Social Media Section -->
+    <section class="social-section">
+        <h3>Connect With Me</h3>
+        <div class="social-links">
+            <!-- Replace # with your actual profile URLs -->
+            <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            
+            <a href="https://twitter.com/yourusername" target="_blank" class="social-link">
+                <i class="fab fa-twitter"></i>
+                <span>Twitter</span>
+            </a>
+            
+            <a href="https://github.com/yourusername" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            
+            <a href="https://instagram.com/yourusername" target="_blank" class="social-link">
+                <i class="fab fa-instagram"></i>
+                <span>Instagram</span>
+            </a>
+        </div>
+    </section>
+
     <section class="testimonials">
-        <h2 class="section-title">Our AI Models </h2>
+        <h2 class="section-title">What Users Say</h2>
         <div class="testimonial-grid">
             <div class="testimonial">
-                <p class="testimonial-text">This AI helps for  Continuously analyzes ECG patterns, blood pressure trends, and lifestyle factors and impcat on Reduces heart attacks and strokes through early intervention.</p>
+                <p class="testimonial-text">"FUCO Health AI detected my irregular heartbeat weeks before my scheduled checkup. My doctor confirmed it and we caught the issue early. This device is a lifesaver!"</p>
                 <div class="testimonial-author">
-                    <div class="author-avatar">UZ</div>
+                    <div class="author-avatar">MJ</div>
                     <div class="author-info">
-                        <h4>Uziy</h4>
-                        <p>Our best Female AI </p>
+                        <h4>Michael Johnson</h4>
+                        <p>Cardiac Patient</p>
                     </div>
                 </div>
             </div>
             <div class="testimonial">
-                <p class="testimonial-text">this AI help for Specialized in analyzing brain imaging (MRI, CT scans) with unprecedented precision and impact on Enables earlier interventions for neurodegenerative diseases.</p>
+                <p class="testimonial-text">"As a diabetic, keeping track of my health metrics was always challenging. With FUCO Health AI, everything is automated and the insights are incredibly helpful."</p>
                 <div class="testimonial-author">
-                    <div class="author-avatar">HJ</div>
+                    <div class="author-avatar">SR</div>
                     <div class="author-info">
-                        <h4>Hasji</h4>
-                        <p>Our excellent male AI</p>
+                        <h4>Sarah Rodriguez</h4>
+                        <p>Type 2 Diabetes Patient</p>
                     </div>
                 </div>
             </div>
             <div class="testimonial">
-                <p class="testimonial-text">This AI helps in Holistic metabolic health monitoring and prediction system and its impact onPrevents Type 2 diabetes progression and manages metabolic health.</p>
+                <p class="testimonial-text">"The predictive analytics warned me about potential respiratory issues during allergy season. I adjusted my medication and avoided a serious episode."</p>
                 <div class="testimonial-author">
-                    <div class="author-avatar">FS</div>
+                    <div class="author-avatar">DP</div>
                     <div class="author-info">
-                        <h4>Faysu</h4>
-                        <p>Our successful male AI </p>
+                        <h4>David Peterson</h4>
+                        <p>Asthma Patient</p>
                     </div>
                 </div>
             </div>
@@ -801,36 +938,8 @@
         <div class="footer-content">
             <div class="footer-column">
                 <h3>FUCO Health</h3>
-                <p>Founded by Mohammed Faaik in 2025, revolutionizing healthcare through artificial intelligence and continuous monitoring technology.</p>
-                <!-- Social Media Links Section -->
-<div class="social-section">
-    <h3>Connect With Me</h3>
-    <div class="social-links">
-        <!-- Replace # with your actual profile URLs -->
-        <a href="https://linkedin.com/in/mohammed_faaik" target="_blank" class="social-link">
-            <i class="fab fa-linkedin"></i>
-            <span>LinkedIn</span>
-        </a>
-        
-        <a href="https://twitter.com/mohammed_faaik" target="_blank" class="social-link">
-            <i class="fab fa-twitter"></i>
-            <span>Twitter</span>
-        </a>
-        
-        <a href="https://github.com/MuhammedFaaik" target="_blank" class="social-link">
-            <i class="fab fa-github"></i>
-            <span>GitHub</span>
-        </a>
-        
-        <a href="https://instagram.com/mohammed_faaik" target="_blank" class="social-link">
-            <i class="fab fa-instagram"></i>
-            <span>Instagram</span>
-        </a>
-        
-      
-    </div>
-</div>
-
+                <p>Founded by Mohammed Faaik in 2018, revolutionizing healthcare through artificial intelligence and continuous monitoring technology.</p>
+            </div>
             <div class="footer-column">
                 <h3>Solutions</h3>
                 <ul class="footer-links">
@@ -860,13 +969,124 @@
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2025 FUCO Health Technologies. Founded by Mohammed Faaik. All rights reserved.</p>
+            <p>&copy; 2023 FUCO Health Technologies. Founded by Mohammed Faaik. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Success Modal -->
+    <div class="modal" id="successModal">
+        <div class="modal-content">
+            <i class="fas fa-check-circle" style="font-size: 48px; color: #2ecc71; margin-bottom: 20px;"></i>
+            <h3>Welcome to FUCO Health AI!</h3>
+            <p>Thank you for joining our community. We've sent a confirmation email to your inbox.</p>
+            <button class="close-modal" onclick="closeModal()">Continue</button>
+        </div>
+    </div>
+
     <script>
-        // Simple animations and interactions
+        // Join Us Form Functionality
         document.addEventListener('DOMContentLoaded', function() {
+            const joinForm = document.getElementById('joinForm');
+            const emailInput = document.getElementById('emailInput');
+            const formMessage = document.getElementById('formMessage');
+            const successModal = document.getElementById('successModal');
+            
+            if (joinForm) {
+                joinForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    
+                    const email = emailInput.value.trim();
+                    
+                    // Simple email validation
+                    if (!isValidEmail(email)) {
+                        showMessage('Please enter a valid email address.', 'error');
+                        return;
+                    }
+                    
+                    // Simulate form submission
+                    simulateSubmission(email);
+                });
+            }
+            
+            // Email validation function
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+            
+            // Show message function
+            function showMessage(message, type) {
+                formMessage.textContent = message;
+                formMessage.className = 'form-message ' + type;
+                
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.style.display = 'none';
+                }, 5000);
+            }
+            
+            // Simulate form submission
+            function simulateSubmission(email) {
+                // Show loading state
+                const submitBtn = joinForm.querySelector('.subscribe-btn');
+                const originalText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Submitting...';
+                submitBtn.disabled = true;
+                
+                // Simulate API call
+                setTimeout(() => {
+                    // Reset button
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.disabled = false;
+                    
+                    // Show success message
+                    showMessage('Thank you for joining! We\'ll be in touch soon.', 'success');
+                    
+                    // Clear input
+                    emailInput.value = '';
+                    
+                    // Show success modal
+                    showSuccessModal();
+                    
+                    // Here you would typically send the data to your backend
+                    console.log('Email submitted:', email);
+                    
+                }, 1500);
+            }
+            
+            // Function to show success modal
+            function showSuccessModal() {
+                if (successModal) {
+                    successModal.style.display = 'flex';
+                }
+            }
+            
+            // Close modal function
+            window.closeModal = function() {
+                if (successModal) {
+                    successModal.style.display = 'none';
+                }
+            }
+            
+            // Close modal when clicking outside
+            if (successModal) {
+                successModal.addEventListener('click', function(e) {
+                    if (e.target === successModal) {
+                        closeModal();
+                    }
+                });
+            }
+
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            if (mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+                });
+            }
+
             // Hero section animation
             const hero = document.querySelector('.hero');
             hero.style.opacity = '0';
@@ -912,24 +1132,7 @@
                 feature.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
                 observer.observe(feature);
             });
-            
-            // Mobile menu toggle
-            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-            const navLinks = document.querySelector('.nav-links');
-            
-            mobileMenuBtn.addEventListener('click', function() {
-                navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-            });
         });
     </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
