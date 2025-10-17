@@ -226,6 +226,7 @@
             box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
         }
 
+        /* ========== ICONS SECTION START ========== */
         .feature-icon {
             font-size: 50px;
             margin-bottom: 20px;
@@ -235,6 +236,7 @@
             align-items: center;
             justify-content: center;
         }
+        /* ========== ICONS SECTION END ========== */
 
         .feature h3 {
             font-size: 24px;
@@ -278,6 +280,56 @@
         .stat-label {
             font-size: 18px;
             opacity: 0.9;
+        }
+
+        .founder-section {
+            padding: 80px 20px;
+            background-color: #ffffff;
+            border-radius: 30px;
+            margin: 40px 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            text-align: center;
+        }
+
+        .founder-content {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .founder-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0d6efd 0%, #198754 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            color: white;
+            font-size: 60px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .founder-info h3 {
+            font-size: 32px;
+            margin-bottom: 15px;
+            color: #0d6efd;
+        }
+
+        .founder-title {
+            font-size: 20px;
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+
+        .founder-bio {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #495057;
+            max-width: 600px;
         }
 
         .testimonials {
@@ -375,6 +427,7 @@
             color: #0d6efd;
         }
 
+        /* ========== SOCIAL ICONS SECTION START ========== */
         .social-links {
             display: flex;
             gap: 15px;
@@ -398,6 +451,7 @@
             background-color: #0d6efd;
             transform: translateY(-3px);
         }
+        /* ========== SOCIAL ICONS SECTION END ========== */
 
         .copyright {
             text-align: center;
@@ -449,7 +503,7 @@
                 FUCO
             </div>
             <ul class="nav-links">
-                <li><a href="#">Products</a></li>
+                <!-- Products link removed as requested -->
                 <li><a href="#">Solutions</a></li>
                 <li><a href="#">Research</a></li>
                 <li><a href="#">About</a></li>
@@ -471,7 +525,8 @@
             </div>
             <p class="availability">Available from 22 Oct</p>
             <div class="cta-buttons">
-                <a href="#" class="btn btn-primary"><i class="fas fa-shopping-cart"></i> Pre-order</a>
+                <!-- Pre-order replaced with Join Us -->
+                <a href="#" class="btn btn-primary"><i class="fas fa-user-plus"></i> Join Us</a>
                 <a href="#" class="btn btn-secondary"><i class="fas fa-info-circle"></i> Learn more</a>
             </div>
         </div>
@@ -504,6 +559,27 @@
                 </div>
                 <h3>Seamless Integration</h3>
                 <p>Syncs with your smartphone and shares data securely with healthcare providers when authorized.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOUNDER SECTION ADDED HERE ========== -->
+    <section class="founder-section">
+        <h2 class="section-title">Our Visionary Leader</h2>
+        <div class="founder-content">
+            <div class="founder-image">
+                <i class="fas fa-user-tie"></i>
+            </div>
+            <div class="founder-info">
+                <h3>Mohammed Faaik</h3>
+                <div class="founder-title">Founder & CEO of FUCO Health AI</div>
+                <p class="founder-bio">
+                    Mohammed Faaik is a visionary entrepreneur and healthcare innovator with over 15 years of experience 
+                    in medical technology. His passion for improving healthcare accessibility led him to establish FUCO 
+                    Health AI in 2018. Under his leadership, FUCO has developed groundbreaking AI-powered health monitoring 
+                    solutions that are transforming patient care worldwide. Mohammed holds a PhD in Biomedical Engineering 
+                    and is committed to making advanced healthcare technology available to everyone.
+                </p>
             </div>
         </div>
     </section>
@@ -570,7 +646,7 @@
         <div class="footer-content">
             <div class="footer-column">
                 <h3>FUCO Health</h3>
-                <p>Revolutionizing healthcare through artificial intelligence and continuous monitoring technology.</p>
+                <p>Founded by Mohammed Faaik in 2018, revolutionizing healthcare through artificial intelligence and continuous monitoring technology.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-twitter"></i></a>
@@ -579,12 +655,12 @@
                 </div>
             </div>
             <div class="footer-column">
-                <h3>Products</h3>
+                <h3>Solutions</h3>
                 <ul class="footer-links">
                     <li><a href="#">Health AI Monitor</a></li>
                     <li><a href="#">Mobile App</a></li>
                     <li><a href="#">Clinician Dashboard</a></li>
-                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Enterprise Solutions</a></li>
                 </ul>
             </div>
             <div class="footer-column">
@@ -600,14 +676,14 @@
                 <h3>Company</h3>
                 <ul class="footer-links">
                     <li><a href="#">About Us</a></li>
+                    <li><a href="#">Leadership</a></li>
                     <li><a href="#">Careers</a></li>
-                    <li><a href="#">Research</a></li>
                     <li><a href="#">Press</a></li>
                 </ul>
             </div>
         </div>
         <div class="copyright">
-            <p>&copy; 2023 FUCO Health Technologies. All rights reserved.</p>
+            <p>&copy; 2023 FUCO Health Technologies. Founded by Mohammed Faaik. All rights reserved.</p>
         </div>
     </footer>
 
