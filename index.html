@@ -675,6 +675,47 @@
       
     </div>
 </div>
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Increased gap between icons */
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    font-size: 28px;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: translateY(-5px) scale(1.1);
+}
+
+.social-icons a:hover:nth-child(1) { background: #0077b5; } /* LinkedIn */
+.social-icons a:hover:nth-child(2) { background: #1da1f2; } /* Twitter */
+.social-icons a:hover:nth-child(3) { background: #333; }    /* GitHub */
+.social-icons a:hover:nth-child(4) { background: #e4405f; } /* Instagram */
+
+/* Responsive for icon-only version */
+@media (max-width: 768px) {
+    .social-icons {
+        gap: 25px; /* Smaller gap on mobile */
+    }
+    
+    .social-icons a {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+}
             <div class="footer-column">
                 <h3>Solutions</h3>
                 <ul class="footer-links">
@@ -768,6 +809,7 @@
     </script>
 </body>
 </html>
+
 
 
 
