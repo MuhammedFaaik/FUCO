@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechCraft | Custom Laptop Building & Shells</title>
+    <title>FUCO |  The teach company</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -639,7 +639,7 @@
             <div class="header-content">
                 <div class="logo">
                     <i class="fas fa-laptop-code"></i>
-                    <span>TechCraft</span>
+                    <span>FUCO</span>
                 </div>
                 <button class="mobile-menu-btn">
                     <i class="fas fa-bars"></i>
@@ -654,7 +654,7 @@
                         <li><a href="#policy" onclick="showPolicyPage()">Policy & Terms</a></li>
                     </ul>
                 </nav>
-                <a href="#contact" class="cta-button">Order Now</a>
+                <a href="#contact" class="cta-button">Order now</a>
             </div>
         </div>
     </header>
@@ -666,9 +666,9 @@
             <!-- Hero Section -->
             <section class="hero" id="home">
                 <div class="container">
-                    <h1>Custom Laptop Building & Shells</h1>
-                    <p>We craft high-performance custom laptops and premium laptop shells tailored to your specific needs. From gaming rigs to professional workstations.</p>
-                    <a href="#contact" class="cta-button">Start Your Project</a>
+                    <h1>FUCO </h1>
+                    <p>We build high-performance laptops and premium laptop shells tailored to your specific needs. From gaming rigs to professional workstations.</p>
+                    <a href="#product" class="cta-button">Our products</a>
                 </div>
             </section>
 
@@ -685,7 +685,7 @@
                                 <i class="fas fa-laptop"></i>
                             </div>
                             <div class="service-content">
-                                <h3>Custom Laptop Building</h3>
+                                <h3>Laptop Building</h3>
                                 <p>We assemble high-performance laptops tailored to your specific needs, whether for gaming, content creation, or professional work.</p>
                                 <a href="#contact" class="btn">Get Quote</a>
                             </div>
@@ -727,9 +727,9 @@
                                 <i class="fas fa-gamepad"></i>
                             </div>
                             <div class="product-content">
-                                <h3>Gaming Pro Laptop</h3>
-                                <p>High-performance gaming laptop with top-tier graphics and cooling system.</p>
-                                <div class="price">From $1,499</div>
+                                <h3>FUCO pro</h3>
+                                <p>High-performance laptop with top-tier graphics and cooling system.</p>
+                                <div class="price">From 62,599 R.S-</div>
                                 <a href="#contact" class="btn">Customize</a>
                             </div>
                         </div>
@@ -738,9 +738,9 @@
                                 <i class="fas fa-briefcase"></i>
                             </div>
                             <div class="product-content">
-                                <h3>Business Elite</h3>
+                                <h3>FUCO Elite</h3>
                                 <p>Sleek, powerful laptop optimized for productivity and professional use.</p>
-                                <div class="price">From $1,199</div>
+                                <div class="price">From 55,599 R.S-</div>
                                 <a href="#contact" class="btn">Customize</a>
                             </div>
                         </div>
@@ -749,9 +749,9 @@
                                 <i class="fas fa-palette"></i>
                             </div>
                             <div class="product-content">
-                                <h3>Creator Studio</h3>
+                                <h3>FUCO CS1 </h3>
                                 <p>Optimized for content creators with color-accurate displays and fast rendering.</p>
-                                <div class="price">From $1,799</div>
+                                <div class="price">From 55,599 R.S-</div>
                                 <a href="#contact" class="btn">Customize</a>
                             </div>
                         </div>
@@ -760,9 +760,9 @@
                                 <i class="fas fa-shield-alt"></i>
                             </div>
                             <div class="product-content">
-                                <h3>Aluminum Shell Case</h3>
-                                <p>Premium aluminum protective shell with custom engraving options.</p>
-                                <div class="price">From $89</div>
+                                <h3>FUCO shield </h3>
+                                <p>high secure and special optimized for professional coder and hackers .</p>
+                                <div class="price">From 1,20,000 R.S</div>
                                 <a href="#contact" class="btn">Order Now</a>
                             </div>
                         </div>
@@ -1010,8 +1010,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-column">
-                    <h3>TechCraft</h3>
-                    <p>Building custom laptops and premium shells tailored to your specific needs since 2015.</p>
+                    <h3>FUCO</h3>
+                    <p>Building custom laptops and premium shells tailored to your specific needs since 2025.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -1049,7 +1049,7 @@
                 </div>
             </div>
             <div class="copyright">
-                <p>&copy; 2025 TechCraft. All rights reserved.</p>
+                <p>&copy; 2025 FUCO. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -1152,7 +1152,7 @@
         // Fallback: Save to browser storage
         function saveToLocalStorage(formData) {
             try {
-                const orders = JSON.parse(localStorage.getItem('techcraft_pending_orders') || '[]');
+                const orders = JSON.parse(localStorage.getItem('FUCO_pending_orders') || '[]');
                 const orderWithId = {
                     ...formData,
                     id: 'TC' + Date.now(),
@@ -1161,7 +1161,7 @@
                 };
                 
                 orders.push(orderWithId);
-                localStorage.setItem('techcraft_pending_orders', JSON.stringify(orders));
+                localStorage.setItem('fuco_pending_orders', JSON.stringify(orders));
                 
                 console.log('Order saved locally. Orders pending sync:', orders);
                 return true;
@@ -1220,8 +1220,8 @@
         });
 
         // Check if URL is set
-        if (GOOGLE_SCRIPT_URL.includes('YOUR_SCRIPT_ID_HERE')) {
-            console.warn('⚠️ Please update GOOGLE_SCRIPT_URL with your actual Google Apps Script URL');
+        if (GOOGLE_SCRIPT_URL.includes('https://script.google.com/macros/s/AKfycbxXNe7n5_WUGDze_keBHbfUXj85T9ic3bnh0nRO6q2nNoc5P7H4NN4MjDJhqYnd45Hd/exec')) {
+            console.warn('https://script.google.com/macros/s/AKfycbxXNe7n5_WUGDze_keBHbfUXj85T9ic3bnh0nRO6q2nNoc5P7H4NN4MjDJhqYnd45Hd/exec');
             console.log('Current URL:',script.google.com/macros/s/AKfycbxXNe7n5_WUGDze_keBHbfUXj85T9ic3bnh0nRO6q2nNoc5P7H4NN4MjDJhqYnd45Hd/exec );
         }
 
@@ -1259,3 +1259,4 @@
     </script>
 </body>
 </html>
+
